@@ -10,10 +10,12 @@ class SearchForm extends React.Component {
 
   render() {
     return(
-      <form id="search-form" onSubmit={this.handleSubmit}>
-        <input id="search" type="text" ref="movieTitle"/>
-        <input type="submit" value="Search" />
-      </form>
+      <div>
+        <form id="search-form" onSubmit={this.handleSubmit}>
+          <input id="search" type="text" ref="movieTitle"/>
+          <input type="submit" value="Search" />
+        </form>
+      </div>
     )
   }
 }
